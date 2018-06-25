@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57278" started-at="2018-06-25T13:05:59Z" finished-at="2018-06-25T13:06:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57278" started-at="2018-06-25T13:05:59Z" finished-at="2018-06-25T13:06:56Z">
+      <class name="testCases.TestCaseName">
+        <test-method status="PASS" signature="preRequisite()[pri:0, instance:testCases.TestCaseName@26be92ad]" name="preRequisite" is-config="true" duration-ms="313" started-at="2018-06-25T18:35:59Z" finished-at="2018-06-25T18:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preRequisite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestCaseName@26be92ad]" name="setup" is-config="true" duration-ms="1" started-at="2018-06-25T18:35:59Z" finished-at="2018-06-25T18:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_ID(java.lang.String)[pri:0, instance:testCases.TestCaseName@26be92ad]" name="TC_ID" duration-ms="55788" started-at="2018-06-25T18:35:59Z" data-provider="URLs" finished-at="2018-06-25T18:36:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.oracle.com/index.html]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.net.URI$Parser.parse(Unknown Source)
+	at java.net.URI.<init>(Unknown Source)
+	at java.net.URI.create(Unknown Source)
+	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:69)
+	at testCases.Base.validateTest(Base.java:259)
+	at testCases.TestCaseName.TC_ID(TestCaseName.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ID -->
+        <test-method status="PASS" signature="updateResults()[pri:0, instance:testCases.TestCaseName@26be92ad]" name="updateResults" is-config="true" duration-ms="970" started-at="2018-06-25T18:36:55Z" finished-at="2018-06-25T18:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateResults -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:testCases.TestCaseName@26be92ad]" name="tear" is-config="true" duration-ms="0" started-at="2018-06-25T18:36:56Z" finished-at="2018-06-25T18:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- testCases.TestCaseName -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
